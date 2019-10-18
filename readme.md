@@ -3,7 +3,6 @@
 A Rest API with Nodejs. The application is based on post: 
 > https://developer.okta.com/blog/2019/03/27/build-rest-api-with-node-and-postgres#add-user-authentication-to-your-node-api
 
-
 ### Docker and postgres:
 ```shell
 docker network create --driver bridge postgres-network
@@ -41,7 +40,7 @@ Configuração | Valor
 * curl -sH 'Content-Type: application/json' http://localhost:3000/my-titles/1 -XDELETE
 * curl -sH 'Content-Type: application/json' http://localhost:3000/my-titles
 
-
+---
 
 ### Links reference
 * https://medium.com/@renato.groffe/postgresql-pgadmin-4-docker-compose-montando-rapidamente-um-ambiente-para-uso-55a2ab230b89
