@@ -1,6 +1,10 @@
 # RestAPI with Nodejs
 
-A Rest API with Nodejs. The application is based on post: 
+Rest API that consumes a public endpoint with movie information (https://www.omdbapi.com).
+You can also record information in the Postgres database. The base used is created with Docker.
+For data visualization a Pgadmin provided by the docker is used.
+
+The application is based on post: 
 > https://developer.okta.com/blog/2019/03/27/build-rest-api-with-node-and-postgres#add-user-authentication-to-your-node-api
 
 ---
