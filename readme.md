@@ -33,9 +33,11 @@ Configuração | Valor
 * curl -s http://localhost:3000/titles?s=Harry+Potter
 
 ##### /services
-* curl -sH 'Content-Type: application/json' http://localhost:3000/services
-* curl -sH 'Content-Type: application/json' http://localhost:3000/services -XPOST -d '{"name":"Netflix"}'
-* curl -sH 'Content-Type: application/json' http://localhost:3000/services/2 -XDELETE
+```shell
+curl -sH 'Content-Type: application/json' http://localhost:3000/services
+curl -sH 'Content-Type: application/json' http://localhost:3000/services -XPOST -d '{"name":"Netflix"}'
+curl -sH 'Content-Type: application/json' http://localhost:3000/services/2 -XDELETE
+```
 
 ##### /my-titles
 * curl -sH 'Content-Type: application/json' http://localhost:3000/my-titles -XPOST -d '{"serviceId":3,"titleId":"tt0241527","location":"Bookshelf"}'
