@@ -27,16 +27,19 @@ Configuração | Valor
 **senha**| 123456
 
 ### URL for test the application
-curl -s http://localhost:3000/titles?s=Harry+Potter
+##### /titles
+* curl -s http://localhost:3000/titles?s=Harry+Potter
 
-curl -sH 'Content-Type: application/json' http://localhost:3000/services
-curl -sH 'Content-Type: application/json' http://localhost:3000/services -XPOST -d '{"name":"Netflix"}'
-curl -sH 'Content-Type: application/json' http://localhost:3000/services/2 -XDELETE
+##### /services
+* curl -sH 'Content-Type: application/json' http://localhost:3000/services
+* curl -sH 'Content-Type: application/json' http://localhost:3000/services -XPOST -d '{"name":"Netflix"}'
+* curl -sH 'Content-Type: application/json' http://localhost:3000/services/2 -XDELETE
 
-curl -sH 'Content-Type: application/json' http://localhost:3000/my-titles -XPOST -d '{"serviceId":3,"titleId":"tt0241527","location":"Bookshelf"}'
-curl -sH 'Content-Type: application/json' http://localhost:3000/my-titles/2 -XPUT -d '{"location":"Internet"}'
-curl -sH 'Content-Type: application/json' http://localhost:3000/my-titles/1 -XDELETE
-curl -sH 'Content-Type: application/json' http://localhost:3000/my-titles
+##### /my-titles
+* curl -sH 'Content-Type: application/json' http://localhost:3000/my-titles -XPOST -d '{"serviceId":3,"titleId":"tt0241527","location":"Bookshelf"}'
+* curl -sH 'Content-Type: application/json' http://localhost:3000/my-titles/2 -XPUT -d '{"location":"Internet"}'
+* curl -sH 'Content-Type: application/json' http://localhost:3000/my-titles/1 -XDELETE
+* curl -sH 'Content-Type: application/json' http://localhost:3000/my-titles
 
 
 
