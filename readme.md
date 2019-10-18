@@ -18,7 +18,6 @@ docker run --name teste-pgadmin --network=postgres-network -p 15432:80 -e "PGADM
 > http://localhost:15432 
 
 
-
 ### Create new server on PGADMIN with values below:
 Configuração | Valor
 ------------ | -------------
@@ -26,6 +25,19 @@ Configuração | Valor
 **port** | 5432
 **username** | postgres
 **senha**| 123456
+
+### URL for test the application
+curl -s http://localhost:3000/titles?s=Harry+Potter
+
+curl -sH 'Content-Type: application/json' http://localhost:3000/services
+curl -sH 'Content-Type: application/json' http://localhost:3000/services -XPOST -d '{"name":"Netflix"}'
+curl -sH 'Content-Type: application/json' http://localhost:3000/services/2 -XDELETE
+
+curl -sH 'Content-Type: application/json' http://localhost:3000/my-titles -XPOST -d '{"serviceId":3,"titleId":"tt0241527","location":"Bookshelf"}'
+curl -sH 'Content-Type: application/json' http://localhost:3000/my-titles/2 -XPUT -d '{"location":"Internet"}'
+curl -sH 'Content-Type: application/json' http://localhost:3000/my-titles/1 -XDELETE
+curl -sH 'Content-Type: application/json' http://localhost:3000/my-titles
+
 
 
 ### Links reference
