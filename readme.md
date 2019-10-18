@@ -30,7 +30,9 @@ Configuração | Valor
 ---
 ### URL for test the application
 ##### /titles
-* curl -s http://localhost:3000/titles?s=Harry+Potter
+```shell
+curl -s http://localhost:3000/titles?s=Harry+Potter
+```
 
 ##### /services
 ```shell
@@ -40,10 +42,12 @@ curl -sH 'Content-Type: application/json' http://localhost:3000/services/2 -XDEL
 ```
 
 ##### /my-titles
-* curl -sH 'Content-Type: application/json' http://localhost:3000/my-titles -XPOST -d '{"serviceId":3,"titleId":"tt0241527","location":"Bookshelf"}'
-* curl -sH 'Content-Type: application/json' http://localhost:3000/my-titles/2 -XPUT -d '{"location":"Internet"}'
-* curl -sH 'Content-Type: application/json' http://localhost:3000/my-titles/1 -XDELETE
-* curl -sH 'Content-Type: application/json' http://localhost:3000/my-titles
+```shell
+curl -sH 'Content-Type: application/json' http://localhost:3000/my-titles -XPOST -d '{"serviceId":3,"titleId":"tt0241527","location":"Bookshelf"}'
+curl -sH 'Content-Type: application/json' http://localhost:3000/my-titles/2 -XPUT -d '{"location":"Internet"}'
+curl -sH 'Content-Type: application/json' http://localhost:3000/my-titles/1 -XDELETE
+curl -sH 'Content-Type: application/json' http://localhost:3000/my-titles
+```
 
 ---
 ### Links reference
